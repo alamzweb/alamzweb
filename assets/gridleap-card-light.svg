@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="170" viewBox="0 0 480 170" role="img" aria-labelledby="title description">
+  <title id="title">GridLeap</title>
+  <desc id="description">Transforms CSV files and spreadsheets into professional, mobile-friendly dashboards.</desc>
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#087E9B"/>
+      <stop offset="1" stop-color="#245DE0"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="478" height="168" rx="19" fill="#FFFFFF" stroke="#D8E3EF" stroke-width="2"/>
+  <rect x="1" y="20" width="4" height="130" rx="2" fill="url(#accent)"/>
+  <rect x="22" y="51" width="68" height="68" rx="15" fill="#F5FAFD"/>
+  <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAABYCAYAAABxlTA0AAAFT0lEQVR4nO2du28cRRzHf3MnW0S27PsHjI8GCkAxBY0J+CIoeBSYCgkKLg0SokgiReIhQWyQeEgpnAIh0eRcgETlUPAoQBwQ0lBg86hzgT+A2PJxyJZv+P7u4czt3u7N7s3sYvz7SHM7u17vz/u5387OjddjReOyqxdI0dOkqUKMohJeF1COKps4l1s4jzpxfUp9hmVq0glu6Qq16QX8IMs4Qglb/u/UqEDrdELVKSHJBLPYA7qI76rQ8aRBROeR1VextMJOcEuXIfYK9q6QQLhy61SkM8joBo1gtOBu1m5gzxLWhD7cTnM2T6saxRAvuKkv4nWFhGg0rUHyedSGEi24qa/gtUqCDTW0y2ewDKFQwuzqKr7CggVbNF1GJp9DbYCwYJGbHo0bX6BNHhTc7S38jK0lrAlJ4RtfkR4wexeDgpt6A6/LKEJauAs3rU6j1kGhdGlqFsuChfF5Bje9q1gOCL6B1zIJLmhA8F1YkkLhtpfHFr5FTXBFgU6jLa53BTd1jQiDN4JL1pHFVYXsLSN7b2CD4JoppRSydxlVubn5AM0EC14hwhCk4INVhU9udVK0hBXBNZq+Y8F/QXAJq4J7NrmJ0Kg4o/DnH1T86gtS29tYc4eenaWDx5+k9tydWAvTj8vE7WcDH2vyzdep8NuvWCNq33c/7b31TqpjOhU88eknNHn2ZdT8sXf5A9p/9jnUbjMs7rD9bGC5Jx57hCiYIHiDW19/n1iyM8GdH+zBk6j5p/XT1uGJxsU197Pljurzh1dCEL4y/ql9jJo9zgRPfPRh57LKAr5c9198CbX4uOZ+tkzdUw5nbw+NN+tvvGlJcCZ48tJ7NHHpfdT8Y17+cXH3L7xCexdeRc2eqbvniXZ2UAuj5+Yg+BfU7Dl6gmdmqPXND4eXflzcNIL/s01E3Im6xMxeJi5uGsGdNv3Rh8NZHHhjbclEcHvxITpYPIVaevQMumlPPBU6wbi4aQQzLHnyjdeo8Huvm3YvumlvvxuKbUMmgtOeqA15xbVFBHtGBHtGBHtGBHtGBHtGBHtGBHtGBHtGBHtGBHtGBHtGBHtGBHtGBHtGBHsmN8E8qM2/mrF9fiLquYikcbMmF8HDnmOwxfevjFyTuWDO3KjnGGwxn3ewjZsXmQuOe47BFvN5B9u4eXEkBZvHs42bF5kLdtFEmMezjZsXmQtmxrnJMebxksTNg1wEM5zJxS8/J7UzvJtWvH6NCtd/RC2MebykcbMmN8GjsD2e7X55IYI9I4I9I4I9I4I9I4I9I4I9I4I9k4ng9uKpxA9gdz9oXEMtjCnOddwgUePQtmQi2DW2gl0SHIe2RQQnwByHtkUEJ8Ach7bFmWAX47y2mJdrpnHzFMyjY+OO81oR+HOqzOKCXJsIZtxxXhvM7O2TV1wbnApmOKPixnnTEvV3cn3yijsKFryJZTbX2PFji2c8qUPzElYE13SmlJFJkXyyyoKXUdlAEVzTmdaLcXyjE3p0JqZjZGpFH/SmVmSkmXAPmofbk4MyTd0gonkUYXxuInvLBEzBksXuGDJBMyN94vFB35emVYV6DArmqW4PaBNbZ7EmJEXTNhVpAW1vg3oMCmbk3zyMw2HT0CcsmNnVa/jKWdQEe1Yhd4UCDBfMSN84CeuQW6UhRAtmJJNtWIXcFYogXjDDbTIRi57FUujDNzRFVcgdaHODjBbMdHsXNey9hDWBu2JFyDV6C1HYCe7T/TCyhjKPchy5iXJuVNaaKJTkdP+xSZWOz01wHWMLNWRsnRKSTrBJV3YFl00FRythy0mUo8wWzuUWzqUOqfU0Uk3+BcOvTWbVaqpqAAAAAElFTkSuQmCC" x="27" y="56" width="58" height="58" preserveAspectRatio="xMidYMid meet"/>
+  <text x="108" y="47" fill="#087E9B" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="1.7">DATA DASHBOARDS</text>
+  <text x="108" y="79" fill="#122238" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="23" font-weight="700">GridLeap</text>
+  <text x="108" y="106" fill="#53677E" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12">Transforms CSV files and spreadsheets into professional,</text>
+  <text x="108" y="124" fill="#53677E" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12">mobile-friendly dashboards.</text>
+  <text x="450" y="151" fill="#435D9E" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10" font-weight="600" text-anchor="end">OPEN PROJECT ↗</text>
+</svg>

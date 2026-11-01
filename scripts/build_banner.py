@@ -1,0 +1,56 @@
+"""Generate the theme-aware profile banner SVGs."""
+
+from html import escape
+
+from theme import ASSETS, THEMES
+
+
+def build_banner(theme_name: str) -> str:
+    theme = THEMES[theme_name]
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="960" height="304" viewBox="0 0 960 304" role="img" aria-labelledby="title description">
+  <title id="title">Saad Alam — Web Developer &amp; AI Automation Engineer</title>
+  <desc id="description">A portfolio banner introducing Saad Alam, a web developer and AI automation engineer.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="{theme.background}"/>
+      <stop offset="1" stop-color="{theme.panel}"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="{theme.cyan}"/>
+      <stop offset="1" stop-color="{theme.blue}"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="{theme.foreground}" stroke-opacity=".045" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect x="1" y="1" width="958" height="302" rx="24" fill="url(#background)" stroke="{theme.border}" stroke-width="2"/>
+  <rect x="1" y="1" width="958" height="302" rx="24" fill="url(#grid)"/>
+  <path d="M640 1h295c13 0 24 11 24 24v254c0 13-11 24-24 24H765c105-47 104-117 32-153-59-30-80-64-157-149Z" fill="{theme.blue}" opacity=".07"/>
+  <circle cx="827" cy="147" r="115" fill="none" stroke="{theme.cyan}" stroke-opacity=".12"/>
+  <circle cx="827" cy="147" r="82" fill="none" stroke="{theme.blue}" stroke-opacity=".18"/>
+  <path d="M730 147h195M827 50v194" stroke="{theme.foreground}" stroke-opacity=".08"/>
+  <rect x="72" y="62" width="7" height="35" rx="3.5" fill="url(#accent)"/>
+  <text x="100" y="82" fill="{theme.cyan}" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="3.3">WEB · AUTOMATION · PRODUCTS</text>
+  <text x="70" y="164" fill="{theme.foreground}" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="62" font-weight="750" letter-spacing="-2.5">SAAD ALAM</text>
+  <path d="M73 190h104" stroke="url(#accent)" stroke-width="4" stroke-linecap="round"/>
+  <text x="72" y="229" fill="{theme.foreground}" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="21" font-weight="600">Web Developer <tspan fill="{theme.muted}" font-weight="400"> &amp; </tspan>AI Automation Engineer</text>
+  <text x="73" y="264" fill="{theme.muted}" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15">Building useful digital products with care, from idea to launch.</text>
+  <g transform="translate(811 111)" fill="none" stroke="url(#accent)" stroke-width="3">
+    <path d="M0 20 24 7l24 13v29L24 63 0 49Z"/>
+    <path d="m24 7 24 13M24 35l24-15M24 35v28M0 20l24 15L0 49"/>
+    <circle cx="24" cy="35" r="5" fill="{theme.panel}" stroke="{theme.cyan}"/>
+  </g>
+</svg>
+"""
+
+
+def main() -> None:
+    ASSETS.mkdir(parents=True, exist_ok=True)
+    for theme_name in THEMES:
+        output = ASSETS / f"banner-{theme_name}.svg"
+        output.write_text(build_banner(theme_name), encoding="utf-8")
+        print(f"Generated {output.relative_to(ASSETS.parent)}")
+
+
+if __name__ == "__main__":
+    main()

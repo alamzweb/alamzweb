@@ -1,0 +1,37 @@
+name: Generate profile
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "README.md"
+      - "scripts/**"
+      - "assets/*.png"
+      - ".github/workflows/profile.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Generate profile
+        run: python scripts/build_profile.py
+      - name: Commit generated profile
+        run: |
+          git add README.md assets/banner-dark.svg assets/banner-light.svg assets/*-card-*.svg
+          if git diff --cached --quiet; then
+            echo "Generated profile is already up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: regenerate GitHub profile"
+          git push
